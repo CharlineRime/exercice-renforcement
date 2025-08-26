@@ -1,29 +1,27 @@
 .button-commun {
   display: flex;
+  padding: 8px 16px;
+  border: 1px solid;
 }
 
 .button-full {
-  background-color: #faa8a8;
-  border: 1px solid #faa8a8;
+  background-color: var(--color-pink-300);
+  border-color: transparent;
   border-radius: 4;
-  padding: 8px 16px;
 }
 
 .button-full:hover {
-  color: #faa8a8;
+  color: var(--color-pink-300);
   background: none;
-  border: 1px solid #faa8a8;
+  border-color: var(--color-pink-300);
   border-radius: 4;
-  padding: 8px 16px;
 }
 
 .button-hollow {
-  border: 1px solid black;
-  padding: 8px 16px;
+  border-color: black;
 }
 
 .button-hollow:hover {
-  color: #928c8c;
-  border: 1px solid #928c8c;
-  padding: 8px 16px;
+  color: var(--color-gray-500);
+  border-color: var(--color-gray-500);
 }

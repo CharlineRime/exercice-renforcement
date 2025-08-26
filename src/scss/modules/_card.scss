@@ -4,3 +4,30 @@
   padding: 20px 12px;
   align-items: flex-start;
 }
+
+article {
+  display: flex;
+  width: 800px;
+  align-items: flex-start;
+  border-radius: 20px;
+  background-color: white;
+  overflow: hidden;
+}
+
+article:hover a {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  article {
+    flex-direction: column;
+    width: 450px;
+  }
+  h2 {
+    align-self: flex-end;
+  }
+  article img {
+    height: 266.992px;
+    align-self: stretch;
+  }
+}

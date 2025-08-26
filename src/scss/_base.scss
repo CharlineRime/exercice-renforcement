@@ -2,6 +2,12 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
+  --color-pink-300: #faa8a8;
+  --color-pink-100: #ebdcdc;
+  --color-white: #ffff;
+  --color-gray-900: gray;
+  --color-gray-500: #928c8c;
 }
 
 body {
@@ -15,32 +21,19 @@ body {
 
 button {
   color: inherit;
-  font-family: Karla;
+  font-family: Karla, sans-serif;
   font-size: 16px;
-  background: none;
-  border: none;
+  background: transparent;
+  border: transparent;
 }
 
 img {
   height: 266.992px;
 }
 
-article {
-  display: flex;
-  width: 800px;
-  align-items: flex-start;
-  border-radius: 20px;
-  background-color: white;
-  overflow: hidden;
-}
-
-article:hover a {
-  text-decoration: underline;
-}
-
 h2 {
-  color: var(--gray-500, #928c8c);
-  font-family: Karla;
+  color: var(--color-gray-500);
+  font-family: Karla, sans-serif;
   font-size: 14px;
   font-weight: 400;
   margin-bottom: 24px;
@@ -48,7 +41,7 @@ h2 {
 
 a {
   color: var(--gray-900, #161a1c);
-  font-family: Karla;
+  font-family: Karla, sans-serif;
   font-size: 32px;
   font-weight: 700;
   line-height: 32px;
@@ -58,21 +51,7 @@ a {
 
 p {
   color: var(--gray-900, #161a1c);
-  font-family: Karla;
+  font-family: Karla, sans-serif;
   font-size: 16px;
   font-weight: 400;
-}
-
-@media (max-width: 600px) {
-  article {
-    flex-direction: column;
-    width: 450px;
-  }
-  h2 {
-    align-self: flex-end;
-  }
-  article img {
-    height: 266.992px;
-    align-self: stretch;
-  }
 }
